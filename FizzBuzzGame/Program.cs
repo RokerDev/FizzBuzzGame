@@ -10,6 +10,11 @@ namespace FizzBuzzGame
     {
         static void Main(string[] args)
         {
+            var game = new FizzBuzz();
+            Console.WriteLine("Let's play the FizzBuzz Game. Give me a number:");
+            var userInput = game.TakeInput();
+            var gameResult = game.Result();
+            Console.WriteLine(gameResult);
         }
     }
 }
